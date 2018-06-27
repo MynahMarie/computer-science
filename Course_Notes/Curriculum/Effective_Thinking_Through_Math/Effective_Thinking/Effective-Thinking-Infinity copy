@@ -1,0 +1,192 @@
+The Infinity Challenge:
+Understanding the Concepts of Correspondence and Cardinality
+
+Written in the context of the class “Effective Thinking Through Mathematics” - January 2017
+
+
+Cardinality: 1 - 1 Correspondence
+
+Imagine a time where you didn't know how to count. Imagine you are again 2-years-old and you are sitting with your brother in your home. A friend of your parents comes in and gives you a handful of candies to share with your brother. Let’s imagine for the sake of this exercise that the candies are all M&Ms. Now like most kids of 2, you dont want to be left with a small pile of candies and let your brother have the big pile. Your brother, who is just a little bit older then you (let’s say 3) and also doesn’t know how to count feels exactly the same way… Even if you both dont know how to count you can both still visually see if a pile of candy is bigger then the other… But still, both of you want to make sure that not one of you gets more candies then the other!
+What would be a way for both of you to have the exact same amount of candies without knowing how many there are to begin with? And without knowing how to count them at all? Easy right? you just tae a candy and put it in front of you then you take another one and put it right below the first one… and so on and so forth until you have 2 lines of candies parallel one to the other. By making 2 separate lines of candies, you can easily see if they match or if one is bigger or smaller then the other. 
+
+The key point in this example is this:
+
+Not knowing how many candies there are doesn't affect your conclusion.
+
+Now let’s say you’ve grown up a bit and you are now a teenager that loves sports! 
+This time, that same friend comes but instead of candies, brings with him two very special barrels. These barrels have an infinite capacity and can contain an infinite amount of things! Kind of like Hermione Granger’s bottomless bag in the last two Harry Potter movies. 
+the friend has “filled” the first barrel with an infinite amount of golf balls. Each one has a number on them starting from 1 all the way up to infinity. The second barrel is filled with ping pong balls once again numbered from 1 all the way up to infinity. Just as you were getting excited because of 
+all those golf and ping pong balls the friend, who is a bit of a joker, goes to the first barrel, takes the golf ball labeled with the number 1 and throws it away! He then looks at you with a smile and says: “Don’t worry!”
+Why would he say that? Does he mean that the barrels are still the same even though golf ball number 1has been thrown away? But how could this be possible?
+
+Let’s try and look at it this way:
+
+Both barrels have an infinite amount of elements, meaning you can’t put a number on the amount of golf balls it contains (otherwise it would be “finite”).
+We know from the M&M example that we dont need to be able to count each element in order to determine if they are the same or different.
+So let’s try and apply the same logic used in the M&M example to our golf and ping pong balls: let’s align them one parallel to the other all the way up to infinity. If we do that, we can easily see that even though golf ball #1 is “missing”, this doesn't actually make any difference in the bigger scheme of things. We can still put 1 golf ball next to each ping pong ball all the way up to infinity and there will never be a ball “missing” on either side!
+In that sense, if we want to put the knowledge acquired in those examples in mathematical terms, we can say that:
+In this example, it is possible to establish a 1 to 1 correspondence between the set of golf balls and the set of ping pong balls. We can say that because we proved that for every golf ball there could be a corresponding ping pong ball. Therefore, in our example, we could say that the set of golf balls and the set of ping pong balls have the same cardinality.
+
+
+
+2.   Cardinality of Integers
+
+Now let’s fast forward into the future and imagine that you are now an adult. As an adult you now work as a hotel manager. Only, this hotel that you are managing is a very special hotel… why? Well, this hotel has an infinity amount of rooms! The rooms are numbered the same way our golf or ping pong balls were: starting from room #1 all the way up to infinity.
+
+Your first day as the “Infinity Hotel” manager was easy, the hotel was empty. But the next day, a huge bus pulled up in front of your hotel’s door. This bus contains a soccer team but again, this is a special team, it has an infinite amount of players! Each player is wearing a t-shirt with his respective team number on it, again starting from 1 all the way up to infinity, and each player is asking for a room for himself. “Easy” you think. “I’ll just put player 1 in room #1 and so on and so forth.” That works out perfectly and each player walks off to his respective room and you are very happy because your hotel is now full.
+
+After everyone got settled in, the manager of the team shows up! And, well, he is also asking for his own room! So what can you do? “Well…” you think. “I have an infinite amount of room so surely I can find room for the manager!” Now you can’t really ask the manager to take the “last” room because, well, there is an infinite amount of rooms so that means the manager would have to walk an infinite amount of time… So what else could be done?
+
+Remember the example of the golf and ping pong balls? “What if I just ask all the players to move down one room number? then I could put manager in room #1 and each player would be in the respective room written on their t-shirt + 1.”
+
+That would give us: : Room 1 —->  Manager
+			                  "  2 —->  Player 1
+                       "   3  —>   Player 2
+                         …    —>   ….
+
+“That works!” you think to yourself. And feeling proud and satisfied that everyone is accommodated and that business is booming, you call it a day and go to sleep.
+
+the next day though, something else happens:
+
+Another infinite bus filled with the opposite infinite team pulls up in front of your Infinity Hotel and each player of the opposite team also wants a room!
+
+Again, you think to yourself that surely by having an infinite amount of rooms you can find a way to accommodate everyone… but how? You can’t just put the other team after the already accommodated team because of the same reason you couldn’t put the manager in the “last” room. The idea of putting the manager at the beginning and asking everyone to just move down a “finite” amount of rooms (everyone moved down 1 room number in the previous example) worked well so maybe it’s possible to do something similar.
+
+While reflecting on this you come up with this idea:
+
+Why not alternate the players from each team? Like this each player from the first team just needs to move down two room numbers leaving a room available between each of them to be taken by a player from the other team. 
+
+So that would give us something like this:  Room 1 —-> Manager
+                                             "   2 —-> Player 1
+                                              "  3 -—> Player -1
+                                            "    4 —-> Player 2
+                                             "   5 —-> Player -2
+                                             
+“Fantastic!” you think. And once again the day ends with you feeling happy and satisfied of a job well done.
+
+What does the story of the “Infinite Hotel” teach us?
+
+If we follow the analogy, the room numbers represent the set of natural numbers from 1 to infinity. The occupants of those rooms represent the set of integers: the manager is 0,
+the first team are the positive integers and the second team represent the negative integers. We can therefore use the analogy of the Infinite Hotel to prove that:
+We can successfully establish a 1 to 1 correspondence between the set of Natural numbers and the set of Integers (since we managed to assign everyone to a room!).
+Therefore, because we managed to establish such a correspondence, we can confidently affirm that the Natural numbers and the Integers have the same Cardinality.
+
+
+
+3.  Cardinality of the Rationals
+
+
+Now that we understand the concept of cardinality and of establishing a 1 to 1 correspondence, let’s see if we can apply the same methodology to another set of numbers.
+
+Let’s see if we could demonstrate that the set of Natural numbers have the same cardinality as the set of Rational numbers.
+
+Now we know that to demonstrate this we should try to establish a 1 to 1 correspondence between the natural numbers and the rationals.
+
+How could we go about doing this? Let’s think back to our analogy of the Infinity Hotel. In that example, we managed to establish a correspondence between the natural numbers and the integers by alternating the positive integers with the negative ones which allowed us to prove that by following this pattern both sets of numbers could be covered in a 1 to 1 correspondence all the way up to infinity.
+
+Would it be possible to find such an alternating pattern that would allow us to cover the complete set of rationals? Yes, it’s possible if we try.
+
+We know that rational numbers are represented by a nominator (top) and a denominator (bottom). We also know that rationals can be either positive or negative. Let’s try and find a pattern that would eventually cover all those possibilities.
+
+First rational number could be 1 represented as such: 1/1. Now it’s negative counterpart could be represented next: -1/1.
+Now the only difference her is that instead of switching between two possibilities (positive int vs negative int) we need to switch four possible combinations (positive and negative nominator, positive and negative denominator).
+
+Let’s start and see what this means:
+
+1	1/1			
+2	-1/1			
+3	1/2
+4	-1/2
+5	2/1
+6	-2/1
+7	1/3
+8	-1/3
+9	2/3
+10	-2/3
+11	3/1
+12	-3/1
+13	3/2
+14	-3/2
+15	1/4
+16	-1/4
+17	3/4
+18	-3/4
+19	4/3
+20	-4/3
+……..
+
+*** Note that repetitions such as 2/2 (equivalent to 1/1) or 2/4(equivalent to 1/2) are not included in the example above.
+
+The pattern here is a little bit more abstract to see but if we look at it carefully we can see that by starting from 1/1 and alternating with it/s negative counterpart -1/1 we can then increment the denominator by one (1/2), again alternating with it’s negative counterpart (-1/2) and then we flip nominator and denominator around (1/2 ==> 2/1) and do the same for it’s negative counterpart (-1/2 ==> -2/1). Once those possibilities are covered we are ready to increment again our denominator (1/3) and repeat the process (1/3, -1/3, 2/3, -2/3, 3/1, -3/1, …).
+
+If we examine this pattern closely we can see how following this pattern we could eventually go trough the entire infinite set of rational numbers and associate each one to a natural number all the way to infinity.
+
+So again we’ve managed to find a pattern that allows us to establish a 1 to 1 correspondence between the set of natural numbers and the set of rational numbers. Therefore we can confidently declare that the set of rational numbers and the set of natural numbers have the same cardinality.
+
+
+4.  Dodgeball
+
+
+Dodgeball is a very exciting game (truly, Professor, it is!) that involves 2 players and a lot of X’s and O’s. The rules are as follows:
+
+Players are given a fixed amount of squares (let’s use 6 for this example). Player 1 is given and equal amount of rows while Player 2 has only one. Player 1 is then asked to fill all the boxes of his first row with a random series of X’s and O’s. He/She can arrange the characters to his fancy. Player 2 then looks at Player 1’s row and choose a single X or O to be written in his/her box of the corresponding row (so one X or O in the first box for Player 1’s first row, etc…). The goal of the game for Player 1 is to end up with one of his sequences to match the final sequence Player 2 while Player 2’s goal is to avoid matching any sequence that Player 1 comes up with.
+
+Would it be possible to predict the outcome of the game? Who will win? 
+
+Let’s try drawing it to have a better reference.
+
+
+Player 1
+
+
+	1		2		3		4		5		6
+
+1	X		X		O		X		O		O
+
+2	O		O		O		X		X		X
+
+3	O		X		X		X		O		O
+	
+4	O		X		O		O		X		X
+
+5	O		X		O		X		O		X
+
+6	O		X		O		X		X		X
+
+
+Player 2
+
+	1		2		3		4		5		6
+	O		X		O		X		X		O
+  
+  
+We can see from the example above that Player 2 won the game. Player 2’s row is different from any row that Player 1 created even though Player 1 tried to match Player 2’s inputs. It’s easy to see the pattern that was developed by Player 2 here: whatever Player 1 enters in the appropriate box number (box 1 for row 1, box 2 for row 2, etc…), Player 2 just enters the opposite character therefore assuring that it will create a different sequence no matter what Player 1 enters.
+
+The question is this: is it possible to find a way in which Player 1 could win the game?
+
+Let’s think about this pattern for a minute. We know that Player 2 was able to win the game because it was always able to react differently to whatever input Player 1 wrote down. That is Player 2’s strategy. But what if Player 1 was given as many rows it takes to cover all possible combinations with a given amount of boxes? For example, if we had only 2 boxes and a possibility of 4 rows, then Player 1 could win because whatever possibility Player 2 enters is bound to be identical to one of Player 1’s entry. So in the example of a 6x6 grid, even if Player 1 tried from the start of the game to fill in the whole grid it would still be possible for Player 2 to find a different sequence by following the same pattern  as demonstrated above. Unless the amount of rows filled is equivalent to the number of possible combinations it is impossible for Player 1 to win the game if Player 2 follows this strategy of always entering a different character than Player 1 in the respective box.
+
+
+5.  Infinity Dodgeball
+
+
+Let’s go back to our exploration of Infinity and examine if we have something to take from our Dodgeball example.
+
+Let’s imagine for a second that the amount of rows and boxes are not fixed before hand. Rather, let’s imagine that the amount of columns and rows go on to infinity in both directions. Deducing from our previous observations, would it be possible for Player 1 to find a way to win the game? In other words, would it be possible for Player 2 to find a pattern that would assure him/her that whatever is written by Player 1 he/she can certainly write down something different?
+
+Now let’s come back to numbers and the principles of correspondence and cardinality we’ve explored earlier.  As we will see a little bit later, the real idea behind the Dodgeball analogy is to see if we could create a 1 to 1 correspondence between the set of natural numbers and the set of decimal numbers.
+
+Let’s say we take our same players but instead of having them play regular Dodgeball, we ask Player 1 to write down all natural numbers on the left (until infinity) and associate each one to a different sequence of X’s and O’s with an infinite amount of boxes. This strategy could be equivalent to the “buy all the lottery tickets” strategy in the sense that Player 1 fills in the whole infinity grid by making a correspondence between each natural number and a sequence of Xs and Os. We then show that list to Player 2 and ask him/her to try and come up with a different sequence that is not listed. Would Player 2 manage to “dodge” the inputs given by Player 1? Yes! By observation, we know that the only way possible Player 2 could loose would be if we had a “finite” set of rows the amount of which is enough to cover all possible combinations given a “finite” amount of boxes. In the case of infinity, this is of course not possible. Therefore, by following the same strategy of consistently entering a different value in the corresponding box, Player 2 is bound to arrive to a different sequence. Even the “buying all the tickets” strategy is bound to fail because whatever the entries, Player 2 will always be able to come up with a different combination by following the same strategy previously discussed.
+
+
+6.  Infinity Comes In Different Sizes
+
+What does that Dodgeball example tell us in terms of correspondence and cardinality? Because it has been impossible for us to find a strategy in which Player 1 could win we could therefore say that it has been impossible to establish a 1 to 1 correspondence between the natural numbers and the set of Xs and Os.
+
+What if we use that same logic but instead of dealing with Xs and Os we replace that by the set of decimal numbers. For this example, let’s use the set of decimal numbers between 0 and 1. Would it be possible to establish a 1 to 1 correspondence between the set of natural numbers and the set of decimal numbers between 0 and 1?
+
+If we try and we apply the exact same strategies and principles explored in the game of dodgeball we will soon see that, in fact, it is impossible to successfully establish a 1 to 1 correspondence between the set of natural numbers and the set of decimal numbers between 0 and 1. Because of that we can confidently declare that therefore, the set of natural numbers and the set of decimal numbers between 0 and 1 have a different cardinality.
+
+What does this final conclusion tell us? It leads us to one of the most amazing and mind boggling ideas that human intellect has reached until today: infinity comes in different sizes! In our first examples, we’ve successfully establish a 1 to 1 correspondence with different sets of infinite numbers (natural vs integers, natural vs rationals). We therefore established that these sets had the same cardinality. Now we are confronted to the idea that two different infinite sets of numbers (natural and decimal) can in fact also have a different cardinality. In short, the cardinality of infinity does not always match the cardinality of another infinity. 
+
+Now this is something that will keep me thinking for years to come, thank you Professor!

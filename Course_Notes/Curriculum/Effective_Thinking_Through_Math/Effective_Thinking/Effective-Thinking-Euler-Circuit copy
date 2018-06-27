@@ -1,0 +1,48 @@
+Euler Circuit Theorem
+Effective Thinking Through Mathematics
+January 2017
+
+
+1.  From Königsberg Bridges to Graphs
+
+
+The problem of the bridges of Königsberg is a very famous one and was resolved by a famous mathematician called Leonhard Euler. At first hand, the problem seems simple. Given a map of the city of Königsberg and the locations of it’s seven bridges, would it be possible to find a route that would allow someone to cross every bridge once and be back at his starting point. Be cause Königsberg is a city crossed by rivers, the 7 bridges are relatively close to each other and the rivers create certain landmasses in the middle of the city.
+
+By trying to resolve and mathematically explain the problem, Euler ended up creating a new filed in mathematics still unknown at that time that we now call Graph Geometry. 
+
+By looking at a representation of the map of Königsberg, Euler tried to simplify it’s visual aspect in an attempt to have a better understanding of the problem. By doing so, Graph Geometry was born. The idea is to simplify the representation of the problem using 2 basic components: vertices and edges. In the Königsberg example, the land masses could be represented by vertices, which are basically points in space, while the bridges could represent the edges, the way to connect the vertices one to another.
+
+
+2.  Isolating a Concept: Degree of a Vertex
+
+Now that we know how to represent a visual image into a graph we notice that each point is connected by a certain amount of edges. The number of connections is called the degrees. So for example if a vertex has 2 edges connecting to it it’s degree is 2. What we are trying to do here is to determine if it would be possible to trace all edges in the graph and while having the starting and end vertex. In other words, in our graphical representation of the bridges of Königsberg, would it be possible to start at a specific vertex, trace all of the graph’s edges only once and be back to our initial vertex. 
+
+3.  Raise Questions: Euler Circuit Conjecture
+
+
+In the various strategies we attempt in order to solve this problem, it is easy to come quite quickly to the conclusion that in the case of the Königsberg problem it is actually impossible to trace all of the graph’s edges and return to our initial vertex. What is more complicated to explain is exactly why it’s not possible. What is the problem or the pattern that is missing in order for us to be able to resolve this issue? 
+
+Observing our thought process further and trying to understand what goes wrong as we are trying to find a solution to the problem can give us some clues. the most significant one I personally had while going through the whole process was to realize that, indeed, if I leave somewhere with the intention to go back to it, I need to have a way back! That means that if there is only 3 degrees to a vertex I can leave that vertex, come back, leave again, but after that all he possibilities are exhausted unless I trace back an edge that I’ve visited before. This is a partial success because it gives me an indication of a pattern or conditions that I need in order to make my goal possible. 
+
+So I am close of having a first definition of my pattern. I can come back to the Königsberg graph and observe it with a different perspective. If my goal is to start at a specific vertex, trace all of the graphs edges and return to my initial starting point, I now know that in order to do that I need to have vertices with an even number of degrees. Now I have a way of looking at the graph and say for sure whether it could be possible or not. In the case of Königsberg’s graph, unfortunately, it is not! Why? because each vertex has an odd number of degrees, therefore I am bound to be stuck at one point of the graph without being able to return to my starting point.
+
+
+
+4.  Make mistakes: Go Until Stuck
+
+While in the process of discovering that apparently simple fact, the key was to trace the graph and try over and over again to find a solution while in the meantime questioning why the attempts would fail. It’s important not to give in to frustration but on the contrary, be interested by what mistakes and failed attempts have to teach us. the truth is that even in the cases where we know there is a way to trace the graph in such a manner that we will find a Euler circuit, it still can take a lot of trials and errors before we find the actual circuit. But our mistakes can still give us an understanding and a methodology we can consistently follow in order to prove certain theories without having the definite answer. In the case of this class, even though Kevin and Devin were not always able to find the circuit in the graph, the understanding of knowing there has to be a way if the degrees are even still allowed them to develop a technique which they could use to prove the theorem.
+
+
+
+5.   Persist: Proving the Euler Circuit Theorem
+
+
+Euler’s theorem states that a graph will contain a Eulerian circuit if all of it’s vertices have an even degree.
+
+In the process of trying to prove this theorem we have come to this methodology: 
+
+If we have an odd number of degree in a given vertex, then we know for sure that it will not be possible to start from that vertex from a given edge and come back to that same vertex because we know for a fact that in order to leave that point we need a way to come back. And because our goal is to trace all edges we are bound to be stuck at a vertex that is not the one we started at.
+
+If all vertices have an even degree, then we can know for sure that it will be possible to find a path that leads us to our initial starting point. But how do we find that path? It turns out that we don’t need to know the exact path. We can confidently use the information that already have to construct a demonstration that will prove the theorem.
+
+If a vertex has an even number of degree, we know we will be able to come back to it. So we can start by choosing a vertex in our graph, trace the edges arbitrarily (without tracing an edge twice) and see where we will get stuck. From there, we can stop and choose a vertex that we already visited at the condition that there is still 1 or more edges that leave this vertex that we haven't traced yet. Once we found our new “starting point” we repeat the process, and again until we are back to our initial vertex and all edges have been traced. If we succeed to do this we can confidently say that this graph contains a Eulerian circuit. why will we succeed? Because of the same simple rule we have found in our exploration, if the vertex has an even amount of degrees then whichever amount of edges we trace we are bound to find a way back to our initial point if all other vertices in the graph also have an even amount of degrees. 
