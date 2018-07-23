@@ -1,0 +1,42 @@
+;; The first three lines of this file were inserted by DrRacket. They record metadata
+;; about the language level of this file in a form that our tools can easily process.
+#reader(lib "htdp-beginner-reader.ss" "lang")((modname sunset) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
+(require 2htdp/image)
+(require 2htdp/universe)
+
+; ==========
+; Constants
+
+(define SUN (overlay (circle 30 "solid" "yellow") 
+            (radial-star 32 30 40 "solid" "orange")))
+
+(define WIDTH 600)
+(define HEIGHT 400)
+(define MTS (empty-scene WIDTH HEIGHT))
+(define SUN-CTR-X (/ WIDTH 2))
+(define SUN-MAX-H (/ HEIGHT 4))
+
+(define MOUNTAINS (beside (triangle 270 "solid" "brown")
+                          (triangle 230 "solid" "brown")
+                          (triangle 250 "solid" "brown")
+                          (triangle 290 "solid" "brown")))
+
+(define LAND (rectangle (+ WIDTH 200) (/ HEIGHT 3) "solid" "brown"))
+
+(define SCENERY (overlay MOUNTAINS LAND))
+
+(define BACKGROUND (place-image MOUNTAINS
+                                (/ WIDTH 2)
+                                (* (/ HEIGHT 3) 2)
+                                (place-image SCENERY (+ (/ WIDTH 2) 70) (+ (* (/ HEIGHT 4) 2) 133)
+                                 MTS)))
+
+(define CLOUD (overlay (beside (circle 15 "solid" "lightgray")
+         (circle 15 "solid" "lightgray")
+         (circle 15 "solid" "lightgray"))
+         (circle 25 "solid" "lightgray")))
+
+(place-image CLOUD (+ (/ WIDTH 3) -90) (+ (/ HEIGHT 2) -55) (place-image SUN SUN-CTR-X SUN-MAX-H BACKGROUND))
+;(place-image CLOUD (/ WIDTH 3) (* (/ HEIGHT 3) 2) MTS)
+
+  
