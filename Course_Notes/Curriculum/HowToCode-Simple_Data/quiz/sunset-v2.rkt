@@ -70,8 +70,8 @@
 ;; no tests for main function
 (define (main s)
   (big-bang s
-            (on-tick next-sun) ; Sun -> Sun
-            (to-draw render-sun) ; Sun -> Image
+            (on-tick next-sun)    ; Sun -> Sun
+            (to-draw render-sun)  ; Sun -> Image
             (on-key handle-key))) ; Sun Key Event -> Sun
 
 
