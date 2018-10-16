@@ -7,7 +7,7 @@
  * The ALU (Arithmetic Logic Unit).
  * Computes one of the following functions:
  * x+y, x-y, y-x, 0, 1, -1, x, y, -x, -y, !x, !y,
- * x+1, y+1, x-1, y-1, x&y, x|y on two 16-bit inputs, 
+ * x+1, y+1, x-1, y-1, x&y, x|y on two 16-bit inputs,
  * according to 6 input bits denoted zx,nx,zy,ny,f,no.
  * In addition, the ALU computes two 1-bit outputs:
  * if the ALU output == 0, zr is set to 1; otherwise zr is set to 0;
@@ -27,8 +27,8 @@
 // if (out < 0) set ng = 1
 
 CHIP ALU {
-    IN  
-        x[16], y[16],  // 16-bit inputs        
+    IN
+        x[16], y[16],  // 16-bit inputs
         zx, // zero the x input?
         nx, // negate the x input?
         zy, // zero the y input?
@@ -36,11 +36,28 @@ CHIP ALU {
         f,  // compute out = x + y (if 1) or x & y (if 0)
         no; // negate the out output?
 
-    OUT 
+    OUT
         out[16], // 16-bit output
         zr, // 1 if (out == 0), 0 otherwise
         ng; // 1 if (out < 0),  0 otherwise
 
     PARTS:
-   // Put you code here:
+        Mux16(a=x, b=false, sel=zx, out=zeroX);         // x is zeroed if sel set to 1
+        Not16(in=zeroX, out=notZeroX);
+        Mux16(a=zeroX, b=notZeroX, sel=nx, out=negX);   // negates x if sel set to 1
+        Mux16(a=y, b=false, sel=zy, out=zeroY);         // y is zeroed if sel set to 1
+        Not16(in=zeroY, out=notZeroY);
+        Mux16(a=zeroY, b=notZeroY, sel=ny, out=negY);    // negates y if sel set to 1
+        Add16(a=negX, b=negY, out=addXY);               // performs + op -> saving value for the f bit
+        And16(a=negX, b=negY, out=andXY);               // performs & op -> saving value for the f bit
+        Mux16(a=andXY, b=addXY, sel=f, out=fXY);        // depending on f, choose one of previous operation result
+        Not16(in=fXY, out=notfXY);                      // negates x and y
+        Mux16(a=fXY, b=notfXY, sel=no, out[15]=ng, out[0..7]=zr1, out[8..15]=zr2, out=out);  // chooses between the negated value or normal output
+
+        //Setting the zr flag
+        Or8Way(in=zr1, out=prezr1);
+        Or8Way(in=zr2, out=prezr2);
+        Or(a=prezr1, b=prezr2, out=notzr);
+        Not(in=notzr, out=zr);
+
 }
